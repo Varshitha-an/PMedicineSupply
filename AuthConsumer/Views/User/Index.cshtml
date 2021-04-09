@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using Microsoft.AspNetCore.Razor.Language.Intermediate
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container border my-lg-5 ">
+    <div class="row p-5">
+        <div class="col-12 justify-content-center"><h2>Schedule Meeting</h2></div>
+        <div class="col-12"><p>Schedule the meetings between Doctors and Representatives for next 5 days</p></div>
+        <div class="col-12">@Html.ActionLink("Get products","Index1","Product",null,new { @class = "btn btn-primary" })</div>
+    </div>
+</div>
+<div class="container border my-lg-5">
+    <div class="row p-5">
+        <div class="col-12 justify-content-center"><h2>Supply Distribution</h2></div>
+        <div class="col-12"><p>Supply Medicines to all Pharmacies equally based on Demand and Stock Availability.</p></div>
+        <div class="col-12">@Html.ActionLink("Supply Medicine", "Index", "Demand", null, new { @class = "btn btn-primary" })</div>
+    </div>
+</div>
